@@ -1,13 +1,11 @@
-# ticket-lifecycle
+
 
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+  <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
 <h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-Outlines of the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
-
-
+In this home lab, I will demonstrate the Ticket and Ticket Life Cycle in osTicket by simulating a series of made-up scenarios as both an end-user and a help desk agent, working through tickets from intake to resolution.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -15,81 +13,113 @@ Outlines of the lifecycle of a ticket from intake to resolution within the open-
 - Remote Desktop
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+<h2>Operating Systems Used</h2>
 
-- Windows 10</b> (21H2)
+- Windows 10 (21H2)
 
 <h2>Ticket Lifecycle Stages</h2>
 
-The lifecycle of an IT support ticket typically includes the following stages:
-
-- 1. **Submission**: The user reports an issue or request, creating a ticket in the IT support system.
-- 2. **Categorization**: The ticket is categorized and prioritized based on the issue's nature and urgency.
-- 3. **Assignment**: The ticket is assigned to an appropriate support technician or team.
-- 4. **Diagnosis**: The technician investigates and diagnoses the problem.
-- 5. **Resolution**: A solution or fix is applied to resolve the issue.
-- 6. **Verification**: The user verifies that the issue is resolved and confirms satisfaction.
-- 7. **Closure**: The ticket is closed in the system once resolved and confirmed.
-
-Throughout this process, communication between the user and support team is maintained to provide updates and gather additional information if needed.
+- Intake
+- Assignment and Communication
+- Working the Issue
+- Resolution
 
 <h2>Lifecycle Stages</h2>
 
-<p>
-<img src="https://imgur.com/Gct7DTx.png" height="80%" width="80%"/>
-</p>
+Admin/Analyst Login Page:  
+[http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
 
-- Create the first ticket by visiting localhost/osTicket and select open a ticket.
-- Enter the info of one of the users and fill out the ticket
-- Open several tickets with varying severities
+End Users osTicket URL:  
+[http://localhost/osTicket](http://localhost/osTicket)
 
-<br />
+### 1. Creating and Managing Tickets
 
-<p>
-<img src="https://imgur.com/NATSjDy.png" height="80%" width="80%" />
-</p>
+In this lab, we will create tickets as end users, observe their properties, and respond as help desk agents.
 
-- Log back in as an Admin and view the tickets
-- Select a ticket to work on
+#### Task 1: Change Department Settings
+- Change the SysAdmins Department to a Top Level Department.
+- DELETE the Maintenance Department (not archive).
 
-<br />
+#### Task 2: End-User Ticket Creation
+As an end-user, create the following ticket:
+- **Issue**: Entire mobile/online banking system is down  
+![image](https://github.com/user-attachments/assets/47710e23-7bd7-4a9e-994e-bc04e24e093a)
 
-<p>
-<img src="https://imgur.com/pg3MmZh.png" height="80%" width="80%" />
-</p>
+#### Task 3: Help Desk Agent View
+As a Help Desk Agent (John), observe the ticket’s properties:
+- Priority
+- Department
+- SLA
+- Assigned To  
+![image](https://github.com/user-attachments/assets/6e803834-c5e5-4f7c-94fe-8848aea8119e)
 
-- This ticket is severe and business critical
-- Click on "Priority" and update to emergency
-- Click on "Assigned to" and assign to an agent
-- Click "SLA plan" and update to SEV A
-- Click "Department" and assign to correct dept
-- Post a reply informing the team of status and actions in progress
+#### Task 4: Set Ticket Properties
+- Set the ticket properties:
+  - **Priority**: Sev-A (1 hour, 24/7)
+  - **Department**: Online Banking  
+![image](https://github.com/user-attachments/assets/de7d3578-53d2-41b7-ac3e-6d3804b0a9c5)
 
-<br />
+#### Task 5: Ticket Observations
+Attempt to observe the ticket again as "John". Can you view or change the ticket?
 
+#### Task 6: Work the Ticket
+Work the ticket to completion as Jane:  
+![image](https://github.com/user-attachments/assets/5d0f379d-d90a-4420-958d-f9df5b66ac9c)
 
+---
 
+### 2. Creating and Managing Additional Tickets
 
+#### Task 1: End-User Ticket Creation
+As an end-user, create the following ticket:
+- **Issue**: Accounting department needs Adobe upgrade, broken
 
-<p>
-<img src="https://imgur.com/sKIzjLB.png" height="80%" width="80%"/>
-</p>
+#### Task 2: Help Desk Agent View
+As a Help Desk Agent (John), observe the ticket’s properties:
+- Priority
+- Department
+- SLA
+- Assigned To
 
-- Go back to the ticketing menu and the ticket that was just edited will appear at the top of list with an updated priority and assignee
-- For more practice log into the profile of the agent that the ticket was assigned to and post a reply to the ticket.
+#### Task 3: Set Ticket Properties
+- Set the ticket properties:
+  - **Priority**: Sev-B (4 hours, 24/7)
+  - **Department**: Support  
+![image](https://github.com/user-attachments/assets/c526e756-a485-43ca-9119-ce7e28a9679e)
 
-<br />
+#### Task 4: Work the Ticket
+Work the ticket to completion as John:  
+![image](https://github.com/user-attachments/assets/a7d69049-4242-45c5-acf7-1c3254961521)
 
+---
 
+### 3. Additional Ticket Management
 
-<p>
-<img src="https://imgur.com/MyOnZGH.png" height="80%" width="80%" />
-</p>
+#### Task 1: End-User Ticket Creation
+As an end-user, create the following ticket:
+- **Issue**: CFO’s laptop will no longer turn on
 
-- Log back in as an Admin and resolve the ticket
+#### Task 2: Help Desk Agent View
+As a Help Desk Agent (John), observe the ticket’s properties:
+- Priority
+- Department
+- SLA
+- Assigned To
 
-<br />
+#### Task 3: Set Ticket Properties
+- Set the ticket properties:
+  - **Priority**: Sev-B (4 hours, 24/7)
+  - **Department**: Support
 
+#### Task 4: Work the Ticket
+Work the ticket to completion as John:  
+![image](https://github.com/user-attachments/assets/a7d69049-4242-45c5-acf7-1c3254961521)
+
+---
+
+<h2>Takeaways and Key Skills Developed</h2>
+
+In this project, I demonstrated the ticket lifecycle in osTicket by creating and resolving tickets as both an end-user and a help desk agent. I configured ticket properties such as priority, department, and SLA and worked through each stage of the lifecycle: intake, assignment, communication, and resolution. This hands-on experience helped me understand the full process of ticket management, including configuring workflows and roles, as well as observing how tickets are managed and resolved from start to finish within a ticketing system.
 
 
 
