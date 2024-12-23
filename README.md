@@ -7,9 +7,20 @@
 <h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
 In this home lab, I will demonstrate the Ticket and Ticket Life Cycle in osTicket by simulating a series of made-up scenarios as both an end-user and a help desk agent, working through tickets from intake to resolution.<br />
 
+<h2>Key Skills and Career-Relevant Takeaways</h2>
+
+<ul>
+  <li><strong>Proficiency in IT Service Management:</strong> Acquired hands-on experience with a ticketing system, which are commonly used all throughout the IT world, mastering the end-to-end ticket lifecycle from intake to resolution.</li>
+  <li><strong>Streamlining Support Processes:</strong> Configured ticket properties (e.g., priority, SLA, and department) to optimize workflows and ensure alignment with organizational goals.</li>
+  <li><strong>Problem-Solving Expertise:</strong> Demonstrated the ability to systematically troubleshoot and resolve technical issues by working through real-world scenarios in a structured environment.</li>
+  <li><strong>Workflow Design and Role Management:</strong> Enhanced skills in defining role-based workflows and permissions, critical for managing team operations and improving service delivery.</li>
+  <li><strong>Technical Communication:</strong> Gained experience in bridging communication between end-users and IT support teams, ensuring issues are accurately documented and resolved efficiently.</li>
+  <li><strong>Adaptability and Process Improvement:</strong> Learned to manage and configure dynamic IT environments, showcasing flexibility and a continuous improvement mindset in service management practices.</li>
+</ul>
+
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines)
 - Remote Desktop
 - Internet Information Services (IIS)
 
@@ -116,10 +127,6 @@ Work the ticket to completion as John:
 ![image](https://github.com/user-attachments/assets/a7d69049-4242-45c5-acf7-1c3254961521)
 
 ---
-
-<h2>Takeaways and Key Skills Developed</h2>
-
-In this project, I demonstrated the ticket lifecycle in osTicket by creating and resolving tickets as both an end-user and a help desk agent. I configured ticket properties such as priority, department, and SLA and worked through each stage of the lifecycle: intake, assignment, communication, and resolution. This hands-on experience helped me understand the full process of ticket management, including configuring workflows and roles, as well as observing how tickets are managed and resolved from start to finish within a ticketing system.
 
 
 
